@@ -160,7 +160,7 @@ class _ExpenseTrackerScreenState extends State<ExpenseTrackerScreen> {
           if (_expenses.isEmpty)
             Center(
               child: Text('No Expenses Added!'),
-            )
+            ),
         ],
       ),
     );
@@ -214,7 +214,6 @@ class _ExpenseCardState extends State<ExpenseCard> {
                 backgroundColor: Theme.of(context).colorScheme.primaryContainer,
               ),
             ),
-            // Text('Rs. ${widget.actualSpend}'),
           ],
         ),
       ),

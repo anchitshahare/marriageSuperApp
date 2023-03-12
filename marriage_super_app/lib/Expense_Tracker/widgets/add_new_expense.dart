@@ -75,11 +75,13 @@ class _AddNewExpenseState extends State<AddNewExpense> {
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).pop(Expenses(
-                    category: _dropdownValue,
-                    amount: double.parse(_budgetamountController.text),
-                    notes: _notesController.text,
-                  ));
+                  Navigator.of(context).pop(
+                    Expenses(
+                      category: _dropdownValue,
+                      amount: double.parse(_budgetamountController.text),
+                      notes: _notesController.text,
+                    ),
+                  );
                 },
                 child: const Text('Add'),
               ),
